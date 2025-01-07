@@ -1,8 +1,14 @@
-up:
-	docker compose up -d
+dev-up:
+	docker compose -f docker-compose.dev.yml up -d
 
-down:
-	docker compose down
+dev-down:
+	docker compose -f docker-compose.dev.yml down
+
+prod-up:
+	docker compose -f docker-compose.prod.yml up -d
+
+prod-down:
+	docker compose -f docker-compose.prod.yml down
 
 shared-network:
 	docker network create shared-network
