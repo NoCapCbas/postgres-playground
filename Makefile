@@ -4,7 +4,7 @@ up:
 down:
 	docker compose down
 
-create-shared-network:
+shared-network:
 	docker network create shared-network
 
 
